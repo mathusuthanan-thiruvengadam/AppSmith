@@ -1,0 +1,276 @@
+Resuming session
+================
+I am continuing work on the AppSmith project.
+
+Before doing anything else:
+
+1. Read the project-level CLAUDE.md.
+2. Read the complete project-memory directory.
+3. Reconstruct the current project state from the persistent project-memory files.
+4. Pay particular attention to:
+
+   * PROJECT.md
+   * REQUIREMENTS.md
+   * DECISIONS.md
+   * BRAINSTORMING.md
+   * OPEN-QUESTIONS.md
+   * IDEAS.md
+   * SESSION-LOG.md
+5. Review the most recent session-log entries to understand what happened previously.
+6. Do not rely only on the previous Claude conversation/session context.
+7. Treat the project-memory files as the persistent source of truth for the project's accumulated knowledge and history.
+
+After reading them, give me a concise "Project Resume" summary containing:
+
+* Current project objective
+* Current understanding of the project
+* Confirmed requirements
+* Important decisions and their rationale
+* Important rejected alternatives
+* Current brainstorming conclusions
+* Open questions
+* Important pending ideas
+* What was completed previously
+* Recommended next steps
+
+Do not modify the project-memory files merely because you read them.
+
+After giving me the Project Resume, wait for my instructions.
+
+
+
+Closing session
+================
+Before we finish this session, perform a complete AppSmith project-memory checkpoint.
+
+Review the entire conversation from this session and identify all information that could be useful in future sessions.
+
+Update the appropriate files under:
+
+project-memory/
+
+Specifically review and update:
+
+* PROJECT.md
+* REQUIREMENTS.md
+* DECISIONS.md
+* BRAINSTORMING.md
+* OPEN-QUESTIONS.md
+* IDEAS.md
+* SESSION-LOG.md
+
+Capture all important information from this session, including:
+
+* new project understanding
+* requirements
+* changed requirements
+* decisions
+* decision rationale
+* alternatives considered
+* rejected approaches that are important to remember
+* important brainstorming conclusions
+* assumptions
+* constraints
+* unresolved questions
+* postponed ideas
+* important discoveries
+* changes in project direction
+* completed work
+* pending work
+* next steps
+
+Important rules:
+
+1. Do not lose important information from this session.
+2. Do not silently overwrite or erase historical decisions.
+3. If a previous decision has changed, preserve the old decision and record the new decision as superseding it, including the reason for the change.
+4. Do not record trivial conversational exchanges.
+5. Keep the memory files structured, concise, readable, and useful for future Claude sessions.
+6. Make sure information is stored in the most appropriate file rather than duplicated unnecessarily.
+7. Update SESSION-LOG.md with a chronological summary of this session.
+8. Make sure another Claude session starting weeks or months from now could understand what we discussed and why the project is in its current state.
+9. Do not modify or delete my global Claude skills/plugins configuration.
+10. Do not push anything to GitHub or any remote repository.
+
+After updating the files:
+
+1. Review the resulting project-memory files for completeness.
+2. Tell me exactly which files were modified.
+3. Give me a concise summary of what was backed up.
+4. List the important decisions captured.
+5. List the unresolved questions.
+6. List the recommended next steps.
+7. Confirm that the important information from this session has been persisted to the project files.
+
+Do not end the session until this project-memory checkpoint is complete.
+
+
+Asking to start a new project
+=============================
+I am starting a new project called AppSmith.
+
+This project will be developed gradually over many Claude Code sessions. I will brainstorm, explore ideas, make decisions, change direction, define requirements, design architecture, and eventually implement the project.
+
+I do NOT want important information to exist only in the Claude conversation/session history.
+
+I want the project itself to contain a persistent, human-readable project memory that survives:
+
+* closing Claude
+* restarting Claude
+* shutting down the laptop
+* power cycling the laptop
+* starting a new Claude session
+* continuing the project weeks or months later
+
+Please set up a robust project-memory system for this project.
+
+IMPORTANT:
+
+* Do not modify my existing global Claude skills/plugins configuration.
+* Do not move, copy, or reinstall my global Claude skills/plugins.
+* Do not create unnecessary plugin-specific structures.
+* This is a project-level persistent knowledge system.
+* Use ordinary Markdown files so I can read them myself in VS Code or any text editor.
+* Preserve information carefully; do not silently discard previous decisions or ideas.
+
+Create this structure in the current project:
+
+project-memory/
+PROJECT.md
+REQUIREMENTS.md
+DECISIONS.md
+BRAINSTORMING.md
+OPEN-QUESTIONS.md
+IDEAS.md
+SESSION-LOG.md
+
+Also create a project-level CLAUDE.md in the project root.
+
+The structure should have these purposes:
+
+1. PROJECT.md
+   Maintain the current high-level understanding of AppSmith:
+
+   * project purpose
+   * problem being solved
+   * target users
+   * project vision
+   * current direction
+   * current status
+   * important constraints
+   * important assumptions
+
+2. REQUIREMENTS.md
+   Maintain requirements discovered during the project.
+   Clearly distinguish:
+
+   * confirmed requirements
+   * tentative requirements
+   * functional requirements
+   * non-functional requirements
+   * constraints
+   * requirements that changed over time
+
+3. DECISIONS.md
+   Maintain important decisions.
+   For every significant decision record:
+
+   * date/session
+   * decision
+   * context
+   * reason/rationale
+   * alternatives considered
+   * why alternatives were rejected
+   * consequences/trade-offs
+   * current status
+
+   Never silently replace an old decision.
+   If a decision changes, preserve the historical decision and record the new decision as a change/superseding decision.
+
+4. BRAINSTORMING.md
+   Maintain important brainstorming discussions and conclusions.
+   Capture ideas that came from exploration even if they have not yet become requirements or decisions.
+
+5. OPEN-QUESTIONS.md
+   Maintain unresolved questions, uncertainties, things requiring investigation, and decisions that have not yet been finalized.
+
+6. IDEAS.md
+   Maintain potentially useful ideas that are not currently part of the implementation plan.
+   Do not lose good ideas simply because they are postponed.
+
+7. SESSION-LOG.md
+   Maintain a chronological summary of significant Claude sessions.
+   For every significant session record:
+
+   * date
+   * objective
+   * important topics discussed
+   * important conclusions
+   * decisions made
+   * requirements discovered or changed
+   * ideas generated
+   * questions remaining
+   * work completed
+   * next steps
+
+Now create the files and populate them with appropriate initial templates.
+
+Also create CLAUDE.md with instructions that make this project a multi-session project and establish the project-memory directory as the persistent source of project knowledge.
+
+CLAUDE.md should instruct future Claude sessions to:
+
+1. Read the relevant project-memory files before doing significant project work.
+
+2. Treat project-memory as persistent project knowledge rather than temporary conversation context.
+
+3. Never rely exclusively on previous conversation history.
+
+4. Before proposing a major decision, check DECISIONS.md for previous decisions.
+
+5. Preserve previous decisions and their rationale.
+
+6. When a decision changes, record the old decision and the new/superseding decision rather than silently overwriting history.
+
+7. Record important requirements in REQUIREMENTS.md.
+
+8. Record important decisions in DECISIONS.md.
+
+9. Record useful brainstorming conclusions in BRAINSTORMING.md.
+
+10. Record unresolved issues in OPEN-QUESTIONS.md.
+
+11. Record postponed but potentially useful ideas in IDEAS.md.
+
+12. Maintain SESSION-LOG.md after significant sessions.
+
+13. At the end of a significant brainstorming or development session, review what happened and update the appropriate project-memory files.
+
+14. Do not record every trivial conversational exchange. Capture information that could affect future project understanding, implementation, architecture, requirements, decisions, or direction.
+
+15. Before starting a new major session, reconstruct the current project state from the project-memory files.
+
+16. If the project-memory files conflict with the current conversation, do not silently choose one. Identify the conflict and ask me or clearly explain the discrepancy.
+
+17. Keep project-memory files concise, structured, readable, and current. Avoid unnecessary duplication.
+
+18. Never delete important historical information merely to keep the files short.
+
+19. When I explicitly say that something is a decision, requirement, important idea, constraint, or project fact, make sure it is persisted in the appropriate project-memory file.
+
+20. At the end of a significant session, provide me with a short "Project Memory Updated" summary listing which files were changed and what was captured.
+
+Do not start implementing AppSmith yet.
+
+First create the project-memory system and CLAUDE.md.
+
+After creating them, inspect the files and show me:
+
+* the resulting directory structure
+* the contents/structure of CLAUDE.md
+* the purpose of each project-memory file
+* whether anything was changed outside this project directory
+
+Do not make assumptions about the actual AppSmith product idea yet. I will provide that separately.
+
+
+
